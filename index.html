@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<title>GCMT - Group</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* INTRO IMAGE */
+.bgimg-1 {
+    background-image: url('INTRO-IMG.png');
+    min-height: 100%;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1 {
+        background-attachment: scroll;
+    }
+}
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#researchers" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-group"></i> RESEARCHERS</a>
+    <a href="#news" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-bullhorn"></i> NEWS</a>
+    <a href="#publications" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PUBLICATIONS</a>
+    <a href="#codes" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-code"></i> CODES</a>
+    <a href="#gallery" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file-photo-o"></i> GALLERY</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  </div>
+
+<!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
+    <a href="#researchers" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-group"></i> RESEARCHERS</a>
+    <a href="#news" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-bullhorn"></i> NEWS</a>
+    <a href="#publications" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-th"></i> PUBLICATIONS</a>
+    <a href="#codes" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-code"></i> CODES</a>
+    <a href="#gallery" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-file-photo-o"></i> GALLERY</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope"></i> CONTACT</a>
+  </div>
+</div>
+
+<!-- Parallax INTRO Image with GCMT-Group Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">GRAU-CRESPO'S MATERIALS <span class="w3-hide-small">THEORY (GCMT)</span> GROUP</span>
+  </div>
+</div>
+
+<!-- RESEARCHERS -->
+<div class="w3-content w3-container w3-padding-64" id="researchers">
+  <h3 class="w3-center">RESEARCHERS</h3>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Dr Ricardo Grau-Crespo</b></p>
+      <img src="MEMBERS-figs/RGC.jpg" class="w3-round w3-image" alt="RGC" width="200" height="200">
+    </div>
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p><a href="https://scholar.google.co.uk/citations?user=jrtFSbQAAAAJ&hl=en" target="_blank">Dr Ricardo Grau-Crespo</a> is a computational materials scientist with an interest in the following topics:</p>
+      <ul>
+        <li> Energy materials (for photocatalysis, solar cells, thermoelectrics, thermochromic windows, hydrogen storage).</li>
+        <li> Surface science and heterogeneous catalysis.</li>
+        <li> Simulation methodologies for the investigation of site-disordered solids (including mineral and synthetic solid solutions).</li>
+      </ul>
+    </div>
+  </div>
+
+<!--Current Group Members-->
+  <p class="w3-wide"><i class="fa fa-child"></i>Current Group Members</p>
+    <p> <a href="https://www.researchgate.net/profile/Scott_Midgley" target="_blank">Mr Scott Midgley</a> - PhD project: Computational geochemistry: trace element incorporation in carbonate minerals. </p>
+      <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <img src="MEMBERS-figs/SDM.jpg" class="w3-round w3-image" alt="SDM" width="200" height="200">
+        </div>
+      </div>
+
+    <p> <a href="https://scholar.google.co.uk/citations?user=S3COl6EAAAAJ&hl=en" target="_blank">Mr Victor Posligua</a> - PhD project: Porphyrin and carbon nanostructures. </p>
+      <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <img src="MEMBERS-figs/VHP.jpg" class="w3-round w3-image" alt="VHP" width="200" height="200">
+        </div>
+      </div>
+
+    <p> <a href="https://www.researchgate.net/profile/Abiramy_Logeswaran" target="_blank">Ms Abiramy Logeswaran</a> - MChem project: Metal cyanides (in collaboration with <a href="https://www.researchgate.net/profile/Ann_Chippindale" target="_blank">Dr Ann Chippindale</a>). </p>
+      <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <img src="MEMBERS-figs/AL.jpg" class="w3-round w3-image" alt="AL" width="200" height="200">
+        </div>
+      </div>
+
+    <p> <a href="">Mr Uzair Samad</a> - MChem project: Mixed-metal zeolitic imidazolate frameworks. </p>
+      <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <img src="MEMBERS-figs/US.png" class="w3-round w3-image" alt="US" width="200" height="200">
+        </div>
+      </div>
+
+    <p> <a href="">Mr Habibur Rahman</a> - MChem project: 2D chalcogenides. </p>
+      <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <img src="MEMBERS-figs/HR.jpg" class="w3-round w3-image" alt="HR" width="200" height="200">
+        </div>
+      </div>
+    
+  <br>
+<!--Former Group Members and Visitors-->
+  <p class="w3-wide"><i class="fa fa-graduation-cap"></i>Former Group Members and Visitors</p>
+    <p> <a href="https://scholar.google.co.uk/citations?user=BCPgsD0AAAAJ&hl=en" target="_blank">Dr Jorge Ontaneda</a> - Modelling oxide surfaces and their interactions (PhD student 2014-2018). </p>
+    <p> <a href="https://scholar.google.com/citations?user=U2aqFk8AAAAJ&hl=en" target="_blank">Ms Elena Remesal</a> (Erasmust student March-July 2018). </p>
+    <p> <a href="">Ms Simmi Trehan</a> (MChem research project 2017-2018). </p>
+    <p> <a href="">Ms Dimpy Pandya</a> (MChem research project 2017-2018). </p>
+    <p> <a href="https://www.researchgate.net/profile/Paulynne_Tornstrom" target="_blank">Ms Paulynne Thornstrom</a> (MChem research project 2016-2017). </p>
+    <p> <a href="https://scholar.google.co.uk/citations?user=0edKipwAAAAJ&hl=en" target="_blank">Dr Alex Aziz</a> - Modelling energy materials (PhD student 2013-2017). </p>
+    <p> <a href="https://scholar.google.com/citations?user=tP7lI70AAAAJ&hl=en" target="_blank">Dr Anjali Singh</a> (visiting PhD student in 2016). </p>
+    <p> <a href="https://scholar.google.co.uk/citations?user=lgRE9goAAAAJ&hl=en" target="_blank">Dr Thomas A. Mellan</a> - Electronic structure and surface behaviour of vanadium dioxide (VO<sub>2</sub>) and other 3d transition metal oxides (finished  in 2015). </p>
+    <p> <a href="https://scholar.google.com/citations?user=B6z6dvkAAAAJ&hl=en" target="_blank">Dr Sharmila Shirodkar</a> (visiting PhD student in 2014). </p>
+  <br>
+<!--Recent collaborators-->
+  <p class="w3-wide"><i class="fa fa-handshake-o"></i>Recent Collaborators</p>
+    <p> <a href="https://scholar.google.com/citations?user=EY7WIIwAAAAJ&hl=en" target="_blank">Prof. Umesh Waghmare</a> - J. Nehru Centre for Advanced Scientific Research (JNCASR), India. </p>
+    <p> <a href="https://scholar.google.com/citations?user=k36VHW8AAAAJ&hl=en" target="_blank">Prof. Tim Fisher</a> - Purdue University, USA. </p>
+    <p> <a href="">Prof. Udo Schwingenschlogl</a> - King Abdullah University of Science and Technology (KAUST), Saudi Arabia. </p>
+    <p> <a href="">Prof. Perla Wahnon</a> - Universidad Politecnica de Madrid, Spain. </p>
+    <p> <a href="https://scholar.google.com/citations?user=w2j8e90AAAAJ&hl=es" target="_blank">Prof. Francesc Illas</a> - Universitat de Barcelona (UB), Spain. </p>
+    <p> <a href="">Prof. Phuti Ngoepe</a> - University of Limpopo, South Africa. </p>
+    <p> <a href="https://scholar.google.com/citations?user=maIpYiAAAAAJ&hl=th" target="_blank">Prof. Javier F. Sanz</a> - Universidad de Sevilla, Spain. </p>
+    <p> <a href="https://scholar.google.es/citations?user=IXTjA1wAAAAJ&hl=es" target="_blank">Dr Norge C. Hernandez</a> - Universidad de Sevilla, Spain. </p>
+    <p> <a href="https://scholar.google.es/citations?user=sL0XQ_MAAAAJ&hl=en" target="_blank">Dr Said Hamad</a> - Universidad Pablo de Olavide, Spain. </p>
+    <p> <a href="https://scholar.google.es/citations?user=ZeXKD0YAAAAJ&hl=en" target="_blank">Dr Rabdel Ruiz-Salvador</a> - Universidad Pablo de Olavide, Spain. </p>
+    <p> <a href="https://scholar.google.co.uk/citations?user=dq80Ff8AAAAJ&hl=en" target="_blank">Prof. Geoff Thornton</a> - University College London, UK. </p>
+</div>
+
+<!--NEWS-->
+<div class="w3-content w3-container w3-padding-64" id="news">
+  <h3 class="w3-center">NEWS</h3>
+
+<p><li> <b>1 October 2018:</b> Welcoming new MChem students to the research group: Abi, Uzair and Habibur (Nasim).</li></p>
+
+<p><li> <b>28 September 2018:</b> Victor’s paper about the band structure of porphyrin-base nanostructures, in collaboration with the group of Harry Anderson at Oxford, has been accepted for publication in the <a href="http://dx.doi.org/10.1021/acs.jpcc.8b08131" target="_blank">Journal of Physical Chemistry C</a>. </li></p>
+  <img src="NEWS-figs/Posligua_TOC_JPC.png" style="width:20%" onclick="onClick(this)" class="w3-hover-opacity">
+
+<p><li> <b>18 September 2018:</b> Scott passed his PhD transfer viva: Congratulations!</li></p>
+
+<p><li> <b>July – August 2018:</b> Ricardo is visiting University College Cork in Ireland, with an <a href="http://www.hpc-europa.eu/transnational_access" target="_blank">HPC-Europa</a> award, to collaborate with <a href="https://www.ucc.ie/en/chemistry/people/davidetiana/" target="_blank">Dr Davide Tiana</a> on DFT modelling of mixed MOFs. </li></p>
+
+</div>
+
+<!--PUBLICATIONS -->
+<div class="w3-content w3-container w3-padding-64" id="publications">
+  <h3 class="w3-center">PUBLICATIONS</h3>
+  <p class="w3-center"><em>See <a href="https://scholar.google.co.uk/citations?user=jrtFSbQAAAAJ&hl=en" target="_blank">Google Scholar</a>.<br> Click on the images to make them bigger.</em></p><br>
+
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="PUBLICATIONS-figs/Colquhoun_ChemSc_2018.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="PUBLICATIONS-figs/Grau-Crespo_Angew_2016.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="PUBLICATIONS-figs/Mellan_JMCA_2013.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="PUBLICATIONS-figs/Ruiz-Hernandez_CEJ_2012.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div>
+</div>
+
+<!--Add future publications (extra row of 4 images)-->
+<!--Uncomment and change the "IMAGE-NAME"-->
+<!--
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="PUBLICATIONS-figs/IMAGE-NAME" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="PUBLICATIONS-figs/IMAGE-NAME" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="PUBLICATIONS-figs/IMAGE-NAME" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="PUBLICATIONS-figs/IMAGE-NAME" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div>
+</div>
+-->
+
+<!-- Modal for full size images on click (NO NEED TO MODIFY) -->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!--CODES -->
+<div class="w3-content w3-container w3-padding-64" id="codes">
+    <h3 class="w3-center">CODES</h3>
+  <p class="w3-wide"><i class="fa fa-code"></i>SOD (Site Occupancy Disorder) program</p>
+    <p>SOD is a package of programs and tools for modelling site-disordered solids. It works in connection with codes like GULP and VASP for the simulations of systems with periodic boundary conditions.</p>
+    <p>SOD first reduces the number of site-occupancy configurations by taking advantage of the crystal symmetry of the lattice. It then creates input files for running GULP, VASP, etc to evaluate the configuration energies. Finally there is a program that takes the results from these calculations and obtain thermodynamic quantities using Boltzmann's statistics.</p>
+      <div class="w3-row-padding w3-center">
+        <img src="SOD-figs/sod1.jpg" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+    <p>Two configurations are equivalent if they are related by a symmetry operation:</p>
+      <div class="w3-row-padding w3-center">
+        <img src="SOD-figs/sod2.jpg" style="width:30%" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+    <p>More information about SOD and the methodology involved can be found in the paper:</p>
+      <ul>
+      <li><a href="http://iopscience.iop.org/article/10.1088/0953-8984/19/25/256201/meta" target="_blank">Symmetry-adapted configurational modelling of fractional site occupancy in solids.</a> (R Grau-Crespo, S. Hamad, CRA Catlow and NH de Leeuw, <em>J. Phys.: Condens. Matter</em> 19 256201, 2007.)</li>
+    </ul>
+    <p>and in the papers listed below. The program was written in the Fortran90 language by Ricardo Grau-Crespo (University of Reading) and Said Hamad (Universidad Pablo de Olavide in Seville, Spain).</p>
+  <p><em>Licence and download</em></p>
+    <p>SOD is freely available under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU GENERAL PUBLIC LICENSE</a>. You can download SOD from its <a href="https://github.com/gcmt-group/sod/releases" target="_blank">Github page</a>.</p>
+  <p><em>List of publications using SOD</em></p>
+    <p>You can find a complete list <a href="https://scholar.google.co.uk/scholar?hl=en&as_sdt=2005&cites=18057655675820365406&scipsc=&q=&scisbd=1" target="_blank">here</a>.</p>
+</div>
+
+<!--GALLERY-->
+<div class="w3-content w3-container w3-padding-64" id="gallery">
+  <h3 class="w3-center">GALLERY</h3>
+
+<!-- October 2018 -->
+  <p class="w3-wide"><i class="fa fa-calendar"></i>October 2018</p>
+    <ul>
+      <li> Group photo: Ricardo, Uzair, Habibur, Scott, Abiramy, Maks, Victor.</li>
+    </ul>
+    <div class="w3-row-padding w3-center">
+      <img src="GALLERY-figs/group-oct2018.jpeg" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+<!-- October 2016 -->
+  <p class="w3-wide"><i class="fa fa-calendar"></i>October 2016</p>
+    <ul>
+      <li> Group photo: Jorge, Victor, Paulynne, Alex and Ricardo.</li>
+    </ul>
+    <div class="w3-row-padding w3-center">
+      <img src="GALLERY-figs/group-oct2016.jpg" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+</div>
+
+<!-- Modal for full size images on click (NO NEED TO MODIFY) -->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!--CONTACT-->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="232" height="272" id="gmap_canvas" src="https://maps.google.com/maps?q=chemistry%20reading&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.maps-erstellen.de">maps-erstellen.de</a></div><style>.mapouter{text-align:right;height:272px;width:232px;}.gmap_canvas {overflow:hidden;background:none!important;height:272px;width:232px;}</style>
+      </div>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <a href="http://www.reading.ac.uk/chemistry/" target="_blank">Department of Chemistry</a><br>
+        <i class="fa fa-map-marke fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <a href="http://www.reading.ac.uk/" target="_blank">University of Reading</a><br>
+        <i class="fa fa-map-marke fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Whiteknights, Reading RG6 6AD<br>
+        <i class="fa fa-map-marke fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> United Kingdom<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> +44 (0)118 378 8789<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <a href="mailto:r.grau-crespo@reading.ac.uk" target="_top"> r.grau-crespo@reading.ac.uk</a> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a class="w3-bar-item fa fa-twitter w3-hover-opacity" href="https://twitter.com/rgraucrespo" target="_blank"></a>
+  </div>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(51.4391045, -0.9425357999999733);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+} 
+</script>
+</body>
+</html>
